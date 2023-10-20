@@ -1,0 +1,196 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    background: linear-gradient(135deg, white 70%, black 30%);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    text-align: left;
+    margin-left: 10%;
+    color: #000000;
+    cursor: pointer;
+}
+
+.user {
+    text-align: right;
+    margin-right: 10%;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.search-bar {
+    border-radius: 10px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.top-nav {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-nav a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 20px;
+    vertical-align: top;
+}
+
+.nav-bar {
+    text-align: center;
+    justify-content: space-between;
+}
+
+.draft {
+    min-height: 100px;
+    max-height: 370px;
+    max-width: 100%;
+    margin-bottom: 0;
+}
+
+.game-category {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 1);
+    height: 15vh;
+    margin-top: -1vh;
+    min-height: 15vh;
+    max-height: 15vh;
+}
+
+@media screen and (max-width: 768px) {
+    .game-category {
+        height: 10vh;
+    }
+}
+
+.icon-bar {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 1);
+    min-height: 15vh;
+    max-height: 22vh;
+}
+
+.game2 {
+    float: left;
+    margin: 20px;
+    text-align: center;
+}
+
+.icon-adventure {
+    transform: scale(1);
+    margin-top: 0;
+}
+
+.adv-text {
+    font-size: 2.6em;
+    margin-left: 40%;
+    display: flex;
+}
+
+.game {
+    text-align: center;
+}
+
+img {
+    cursor: pointer;
+    max-width: 100px;
+}
+
+.gameicon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 5px;
+    max-height: 70px;
+    min-width: 5px;
+    max-width: 70px;
+    margin-top: 4vh;
+}
+
+@media screen and (max-width: 768px) {
+    .gameicon {
+        min-height: 1vh;
+        max-height: 50px;
+        min-width: 1vh;
+        max-width: 50px;
+    }
+}
+
+.gameicon:hover {
+    transform: scale(1.1);
+}
+
+.category-name {
+    font-family: sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contrast {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .item {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .item img {
+    width: auto;
+    height: auto;
+    border-radius: 5%;
+    box-shadow: 0 0 10px #000;
+  }
+  
+  .item h2 {
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  .buy-button {
+    justify-content: center;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+.topgames:hover {
+    transform: scale(1.3);
+}
+
+
+
+
+
+
+
