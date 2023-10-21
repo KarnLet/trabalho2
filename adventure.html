@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width", initial-scale="1">
         <link rel="stylesheet" href="CSS/adventure.css">
+        <script src="script.js"></script>
     </head>
 
     <body>
@@ -15,12 +16,21 @@
         </header>
 
         <div class="top-nav">
-            <nav>
-                    <div class="nav-bar">
-                        <a href="index.html">Menu</a>
-                        <a href="produtos.html">Produtos</a>
-                        <a href="cadastro.html">Cadastre-se</a> 
+            <nav class="navbar">
+                <a href="index.html">Menu</a>
+                <a href="produtos.html">Produtos</a>
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Categorias</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="adventure.html">Aventura</a>
+                        <a href="#">Esportes</a>
+                        <a href="#">FPS</a>
+                        <a href="#">MMO</a>
+                        <a href="#">MOBA</a>
+                        <a href="#">RPG</a>
                     </div>
+                </div>
+                <a href="cadastro.html">Cadastre-se</a>
             </nav>
         </div>
 
@@ -34,29 +44,6 @@
         
         <img class="draft" src="img/rdr2.jpg">
 
-            <div class="game-category">
-                
-                <div class="game">
-                    <img class="gameicon" src="img/Esporte2.png">
-                    <p class="category-name">Esporte</p>
-                </div>
-                <div class="game">
-                    <img class="gameicon" src="img/FPS3.png">
-                    <p class="category-name">FPS</p>
-                </div>
-                <div class="game">
-                    <img class="gameicon" src="img/MMO.png">
-                    <p class="category-name">MMO</p>
-                </div>
-                <div class="game">
-                    <img class="gameicon" src="img/MOBA3.png">
-                    <p class="category-name">MOBA</p>
-                </div>
-                <div class="game">
-                    <img class="gameicon" src="img/RPG3.png">
-                    <p class="category-name">RPG</p>
-                </div>
-            </div>
            
         <div class="contrast">
             <h2>JOGOS DISPONÍVEIS</h2>

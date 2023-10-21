@@ -57,6 +57,73 @@ body {
     justify-content: space-between;
 }
 
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+
+.dropbtn{
+    margin-top: 15%;
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown {
+    cursor: pointer;
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .show {
+    display: block;
+  }
+
 .draft {
     min-height: 100px;
     max-height: 370px;
@@ -64,23 +131,6 @@ body {
     margin-bottom: 0;
 }
 
-.game-category {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: relative;
-    box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 1);
-    height: 15vh;
-    margin-top: -1vh;
-    min-height: 15vh;
-    max-height: 15vh;
-}
-
-@media screen and (max-width: 768px) {
-    .game-category {
-        height: 10vh;
-    }
-}
 
 .icon-bar {
     display: flex;
@@ -118,35 +168,6 @@ img {
     max-width: 100px;
 }
 
-.gameicon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 5px;
-    max-height: 70px;
-    min-width: 5px;
-    max-width: 70px;
-    margin-top: 4vh;
-}
-
-@media screen and (max-width: 768px) {
-    .gameicon {
-        min-height: 1vh;
-        max-height: 50px;
-        min-width: 1vh;
-        max-width: 50px;
-    }
-}
-
-.gameicon:hover {
-    transform: scale(1.1);
-}
-
-.category-name {
-    font-family: sans-serif;
-    font-weight: bold;
-    cursor: pointer;
-}
 
 .contrast {
     text-align: center;
