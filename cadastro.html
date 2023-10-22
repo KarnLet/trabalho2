@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+    <head>
+        <title>Cadastre-se</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1">
+        <link rel="stylesheet" href="CSS/cadastro.css">
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <header class="header row">
+            <div class="logo">Seu Logotipo</div>
+            <input type="text" class="search-bar" placeholder="Pesquisar...">
+            <div class="user">Nome de Usuário</div> 
+        </header>
+
+        <div class="top-nav">
+            <nav class="navbar">
+                <a href="index.html">Menu</a>
+                <a href="produtos.html">Produtos</a>
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Categorias</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="adventure.html">Aventura</a>
+                        <a href="#">Esportes</a>
+                        <a href="#">FPS</a>
+                        <a href="#">MMO</a>
+                        <a href="#">MOBA</a>
+                        <a href="#">RPG</a>
+                    </div>
+                </div>
+                <a href="cadastro.html">Cadastre-se</a>
+            </nav>
+        </div>
+            <div id="id01" class="modal">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <form class="modal-content" action="/action_page.php">
+                  <div class="container">
+                    <h1>Cadastre-se</h1>
+                    <p>Por favor, preencha os campos para criar uma conta.</p>
+                    <hr>
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" required>
+              
+                    <label for="psw"><b>Senha:</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+              
+                    <label for="psw-repeat"><b>Repita a senha</b></label>
+                    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                    
+                    <label>
+                      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Lembre de  mim!
+                    </label>
+              
+                    <p>Ao criar uma conta em nosso site você aceita nossos <a href="#" style="color:dodgerblue">Termos & Privacidade</a>.</p>
+              
+                    <div class="clearfix">
+                      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                      <button type="submit" class="signupbtn">Sign Up</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+
+
+
+    </body>
+</html>
