@@ -5,42 +5,65 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width", initial-scale="1">
         <link rel="stylesheet" href="CSS/index.css">
-        <script src="script.js"></script>
+        <script src="JS/script.js"></script>
     </head>
 
     <body>
         <header class="header row">
-            <div class="logo">Seu Logotipo</div>
+            <div class="logo">Logotipo</div>
             <input type="text" class="search-bar" placeholder="Pesquisar...">
-            <div class="user">Nome de Usuário</div> 
+            <div class="user">
+             <a class="login" href="">Login</a>
+            </div> 
         </header>
 
         <div class="top-nav">
             <nav class="navbar">
                 <a href="index.html">Menu</a>
-                <a href="produtos.html">Produtos</a>
+                <a href="produtos.html">Produtos</a>  
                 <div class="dropdown">
                     <button onclick="myFunction()" class="dropbtn">Categorias</button>
                     <div id="myDropdown" class="dropdown-content">
                         <a href="adventure.html">Aventura</a>
-                        <a href="#">Esportes</a>
-                        <a href="#">FPS</a>
-                        <a href="#">MMO</a>
-                        <a href="#">MOBA</a>
-                        <a href="#">RPG</a>
+                        <a href="esportes.html">Esportes</a>
+                        <a href="fps.html">FPS</a>
+                        <a href="mmo.html">MMO</a>
+                        <a href="rpg.html">RPG</a>
                     </div>
                 </div>
-                <a href="cadastro.html">Cadastre-se</a>
             </nav>
         </div>
-        <br>
-        <br>
+        
+
+        <img  class="diablo" src="img/diablo.jpg">
+      <div class="bottombar">
+            <a class="iconeimg" href="adventure.html">
+            <img class="iconespace" src="img/adventure2.png">
+            </a>
+
+            <a class="iconeimg" href="esportes.html">
+            <img class="iconespace" src="img/Esporte2.png">
+            </a>
+
+            <a class="iconeimg" href="fps.html">
+            <img class="iconespace" src="img/FPS3.png">
+            </a>
+
+            <a class="iconeimg"  href="mmo.html">
+            <img class="iconespace" src="img/MMO.png">
+            </a>
+
+            <a class="iconeimg" href="rpg.html">
+            <img class="iconespace" src="img/RPG3.png">
+            </a>
+      </div>
+       <br>
         <div class="slideshow-container">
 
 
                 <h2 class="home_page_content_title">Recomendados e em destaque</h2>
                 <div class="mySlides fade">
-                  <img class="top-img" src="img/cs2.jpg" style="width:100%" alt="Counter Strike 2">
+                  <img class="top-img" src="img/readyornot2.jpg" style="width:100%" alt="Counter Strike 2">
                 </div>
                 
                 <div class="mySlides fade" style="display: none;">
@@ -68,6 +91,6 @@
                   <span class="dot" onclick="currentSlide(4)"></span>
                 </div>
         </div> 
-               
+       
     </body>
 </html>
