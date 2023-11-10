@@ -20,16 +20,16 @@ body {
 }
 
 .top-img{
-  border-radius: 10px;
+  border-radius: 0px;
   box-shadow: #000000;
 }
 
 
 
 .slideshow-container {
-  max-width: 35%;
+  max-width: 100%;
   position: relative;
-  margin: auto;
+ 
 }
 
 
@@ -40,18 +40,25 @@ body {
   top: 50%;
   width: auto;
   padding: 16px;
-  margin-top: -22px;
+  margin-top: -100px;
   color: white;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+  border-radius: 0px 3px 3px 0px;
   user-select: none;
+}
+
+
+@media screen and (max-width: 768px) {
+.prev, .next{
+  margin-top: -80px;
+}
 }
 
 .next {
   right: 0;
-  border-radius: 3px 0 0 3px;
+  
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -101,7 +108,18 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    margin-top: -4.5%;
+    margin-bottom: -4.5%;
+
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    margin-top: -6.9%;
+    margin-bottom: -6.9%;
+    margin-left: 0.5%;
+
+  }
 
 }
 
@@ -234,22 +252,21 @@ body {
     display: block;
   }
 
-  .diablo{
-    display: flex;
-    width: 100%;
-  }
 
   .bottombar {
     display: flex;
     box-shadow: 0px 0px 10px;
-    min-height: 16vh;
+    min-height: 17vh;
     max-height: 22vh;
+    margin-top: -2%;
 }
+
 
 @media screen and (max-width: 768px) {
   .bottombar {
     min-height: 10vh;
-    max-height: 20vh;
+    max-height: 22vh;
+    margin-top: -4.6%;
 
   }
 }
@@ -270,22 +287,26 @@ body {
     scale: 6.5;
 }
 
+
+
 .iconespace:hover {
   opacity: 100%;
 }
 
 
 .logo{
-    text-align: left;
-    margin-left: 10%;
+    
+   margin-left: -4%;
     color: #000000;
     cursor: pointer;
+    scale: 0.3;
+    
     
 }
 
 @media screen and ( max-width: 768px){ 
   .logo{ 
-    margin-left: 6%;
+    margin-left: -9%;
 
   }
 }

@@ -10,10 +10,14 @@
 
     <body>
         <header class="header row">
-            <div class="logo">Logotipo</div>
+            <div class="logo">
+              <a href="index.html">
+              <img src="/img/funquest logo2.png">
+              </a>
+            </div>
             <input type="text" class="search-bar" placeholder="Pesquisar...">
             <div class="user">
-             <a class="login" href="">Login</a>
+             <a class="login" href="signin.html">Login</a>
             </div> 
         </header>
 
@@ -35,7 +39,43 @@
         </div>
         
 
-        <img  class="diablo" src="img/diablo.jpg">
+        <div class="slideshow-container">
+
+
+          <div class="mySlides fade">
+            <img class="top-img" src="img/diablo.jpg" style="width:100%" alt="Counter Strike 2">
+          </div>
+          
+          <div class="mySlides fade" style="display: none;">
+            <img class="top-img" src="img/rdr2.jpg" style="width:100%" alt="Dota 2">
+          </div>
+          
+          <div class="mySlides fade" style="display: none;">
+            <img class="top-img" src="img/esportecapa.jpg" style="width:100%" alt="FC24">
+          </div>
+
+          <div class="mySlides fade" style="display: none;">
+              <img class="top-img" src="img/fpscapa.jpg" style="width:100%" alt="Nier: Automata">
+          </div>
+
+          <div class="mySlides fade" style="display: none;">
+              <img class="top-img" src="img/mmocapa.jpg" style="width:100%" alt="Nier: Automata">
+          </div>
+          
+            <div class="mySlides fade" style="display: none;">
+              <img class="top-img" src="img/rpgcapa.jpg" style="width:100%" alt="Nier: Automata">
+            </div>  
+
+          <div>
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+          
+          </div>
+          <br>
+          
+  
+
+
       <div class="bottombar">
             <a class="iconeimg" href="adventure.html">
             <img class="iconespace" src="img/adventure2.png">
@@ -58,39 +98,5 @@
             </a>
       </div>
        <br>
-        <div class="slideshow-container">
-
-
-                <h2 class="home_page_content_title">Recomendados e em destaque</h2>
-                <div class="mySlides fade">
-                  <img class="top-img" src="img/readyornot2.jpg" style="width:100%" alt="Counter Strike 2">
-                </div>
-                
-                <div class="mySlides fade" style="display: none;">
-                  <img class="top-img" src="img/dota2.jpg" style="width:100%" alt="Dota 2">
-                </div>
-                
-                <div class="mySlides fade" style="display: none;">
-                  <img class="top-img" src="img/fc24.jpg" style="width:100%" alt="FC24">
-                </div>
-
-                <div class="mySlides fade" style="display: none;">
-                    <img class="top-img" src="img/nier.jpg" style="width:100%" alt="Nier: Automata">
-                  </div>
-                
-                <a class="prev" onclick="plusSlides(-1)">❮</a>
-                <a class="next" onclick="plusSlides(1)">❯</a>
-                
-                </div>
-                <br>
-                
-                <div style="text-align:center">
-                  <span class="dot" onclick="currentSlide(1)"></span> 
-                  <span class="dot" onclick="currentSlide(2)"></span> 
-                  <span class="dot" onclick="currentSlide(3)"></span> 
-                  <span class="dot" onclick="currentSlide(4)"></span>
-                </div>
-        </div> 
-       
     </body>
 </html>
