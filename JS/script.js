@@ -18,67 +18,70 @@ function myFunction() {
   }
 
 
-////slide images
-let currentSlide = 1;
-let loop = true;
-let slides; // Declaramos slides no escopo global
-
-function prevSlide() {
-  currentSlide -= 1;
-  if (currentSlide < 1) {
-    currentSlide = slides.length;
-  }
-  showSlides(currentSlide);
-}
-
-function nextSlide() {
-  currentSlide += 1;
-  if (currentSlide > slides.length) {
-    currentSlide = 1;
-  }
-  showSlides(currentSlide);
-}
-
-function showSlides(currentSlide) {
-  let i;
-  slides = document.querySelectorAll(".mySlides"); // Movemos a declaração para o escopo global
-  let dots = document.querySelectorAll(".dot");
-
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-
-  for (i = 0; i < dots.length; i++) {
-    dots[i].classList.remove("active");
-  }
-
-  slides[currentSlide - 1].style.display = "block";
-  dots[currentSlide - 1].classList.add("active");
-}
-
-// Call showSlides with currentSlide 1 when the page loads
-window.addEventListener("load", function () {
-  showSlides(currentSlide);
-});
-
-// Autoplay
-function autoplay() {
-  nextSlide();
-}
-
-setInterval(autoplay, 5000, loop);
-
-
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-
-document.getElementById('aventura').addEventListener('click', function() {
-  window.location.href = "adventure.html";
-});
+  let currentSlide = 1;
+  let slides;
   
-
+  // Função para inicializar o carrossel
+  function initCarousel() {
+    slides = document.querySelectorAll(".mySlides");
+    showSlides(currentSlide);
+  
+    // Adicione um ouvinte de clique para a seta esquerda
+    document.querySelector(".prev").addEventListener("click", function () {
+      plusSlides(-1);
+    });
+  
+    // Adicione um ouvinte de clique para a seta direita
+    document.querySelector(".next").addEventListener("click", function () {
+      plusSlides(1);
+    });
+  
+    // Ouvinte de evento de teclado
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "ArrowLeft") {
+        plusSlides(-1);
+      } else if (event.key === "ArrowRight") {
+        plusSlides(1);
+      }
+    });
+  
+    // Autoplay
+    setInterval(function () {
+      plusSlides(1);
+    }, 5000);
+  
+    // Quando o usuário clica em qualquer lugar fora do modal, fecha o modal
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  
+    document.getElementById('aventura').addEventListener('click', function () {
+      window.location.href = "adventure.html";
+    });
+  }
+  
+  // Função para navegar para o slide anterior/próximo
+  function plusSlides(n) {
+    currentSlide += n;
+    if (currentSlide > slides.length) {
+      currentSlide = 1;
+    } else if (currentSlide < 1) {
+      currentSlide = slides.length;
+    }
+    showSlides(currentSlide);
+  }
+  
+  // Função para exibir os slides
+  function showSlides(currentSlide) {
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+  
+    slides[currentSlide - 1].style.display = "block";
+  }
+  
+  // Chame a função de inicialização do carrossel quando a página carregar
+  window.addEventListener("load", initCarousel);
+  
