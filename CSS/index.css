@@ -40,7 +40,7 @@ body {
   top: 50%;
   width: auto;
   padding: 16px;
-  margin-top: -100px;
+  margin-top: -180px;
   color: white;
   font-weight: bold;
   font-size: 18px;
@@ -52,7 +52,7 @@ body {
 
 @media screen and (max-width: 768px) {
 .prev, .next{
-  margin-top: -80px;
+  margin-top: -160px;
 }
 }
 
@@ -108,19 +108,19 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: -4.5%;
-    margin-bottom: -4.5%;
-
+    margin-bottom: -70px;
+    margin-top: -70px;
 }
 
-@media screen and (max-width: 768px) {
-  .header {
-    margin-top: -6.9%;
-    margin-bottom: -6.9%;
-    margin-left: 0.5%;
-
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
   }
-
+  .header-right {
+    float: none;
+  }
 }
 
 .header .column {
@@ -295,13 +295,11 @@ body {
 
 
 .logo{
-    
-   margin-left: -4%;
+    margin-left: 4%;
     color: #000000;
     cursor: pointer;
     scale: 0.3;
-    
-    
+      
 }
 
 @media screen and ( max-width: 768px){ 
@@ -334,6 +332,61 @@ body {
   }
 }
 
+footer {
+  background-color: rgb(10, 10, 10);
+  text-align: center;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  
+}
+
+.container-footer {
+  max-width: 1400px;
+  padding: 0 4%;
+  margin: auto;
+}
+
+.row-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+}
+
+.footer-col {
+  flex: 0 0 33.33%;
+  padding: 0 15px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.footer-col h4 {
+  font-size: 20px;
+  color: white;
+  margin-bottom: 0;
+  font-weight: 500;
+  position: relative;
+  text-transform: uppercase;
+  margin-left: 11%;
+}
+
+.footer-col ul {
+  list-style: none;
+  color: white;
+}
+
+.footer-col ul li {
+  margin: 10px 0;
+}
+
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: white;
+  text-decoration: none;
+  font-weight: 300;
+  transition: all 0.3s ease;
+}
 
 
 
