@@ -52,7 +52,7 @@ body {
 
 @media screen and (max-width: 768px) {
 .prev, .next{
-  margin-top: -160px;
+  margin-top: -180px;
 }
 }
 
@@ -304,7 +304,7 @@ body {
 
 @media screen and ( max-width: 768px){ 
   .logo{ 
-    margin-left: -9%;
+    margin-left: -12%;
 
   }
 }
